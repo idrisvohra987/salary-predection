@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1du6ZzDjpsxHYZtiuobAizeU-wKxlV0-Y
 """
 
-import streamlist as st
+import streamlit as st
 import pandas as pd
 import joblib
 
@@ -39,6 +39,6 @@ if st.button("Predict Salary"):
   for col in encoder:
     df[col] = encoders[col].transform(df[col])
 
-    prediction = model.predict(df)
-    st.success(f"Predicted Salary: {prediction[0]:,.2f}")
-    st.success(f"Result: {result[0]}")
+  prediction = model.predict(df)
+  st.success(f"Predicted Salary: {prediction[0]:,.2f}")
+  st.success(f"Result: {result[0]}")
