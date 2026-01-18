@@ -30,7 +30,7 @@ df = pd.DataFrame({
     "Age":[age],
     "Gender":[gender],
     "Education Level":[education],
-    "Job Title"[job],
+    "Job Title":[job],
     "Years of Experience":[experience]
 })
 # predict
